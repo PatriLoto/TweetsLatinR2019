@@ -68,7 +68,7 @@ graficoFinal
 ggsave("graficoLogoLatinR2019.png",width = 10, height = 5, dpi = "retina")
 #--------------------------------------------------------------------------------
 #opción 2
-imagen2 <-readJPEG("E:/PROYECTOS_CON_R/TweetsLatinR/latinr2019.jpg", FALSE)  #logolatinrHexagonal
+imagen2 <-readJPEG("E:/PROYECTOS_CON_R/TweetsLatinR/latinr2019.jpg", FALSE)  #logolatinrsinDescripcion
 marca2 <- rasterGrob(imagen2, interpolate=F,height=unit(3, "cm"),hjust=-1.5,  vjust=0)
 pmarca2 <-grafico1 + annotation_custom(marca2,xmin=-Inf, xmax=Inf, ymin=-Inf, ymax=Inf)
 pmarca2
